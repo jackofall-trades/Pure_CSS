@@ -57,6 +57,7 @@ body {
   align-items: center;
 }
 
+/* for cube-0 */
 .example-0 {
     background-color: #0000007f;  /* 7f is for opacity */
     color: white;
@@ -121,8 +122,6 @@ body {
   transform: rotateX(-90deg) translateZ(127.5px);
 }
 
-
-
 /* cube 2 */
 .cube-2 {
   transform: rotate3d(1, 0, 0, 60deg);
@@ -141,7 +140,6 @@ body {
   background-color: #fab3677f;
 }
 
-
 /* cube 4 */
 .cube-4 {
   transform: rotate3d(-1, 1, 0, 65deg);
@@ -150,7 +148,6 @@ body {
 .example-4 {
   background-color: #0df5d37f;
 }
-
 
 .cube.x-axis {
   animation: x-axis-rotate 2s ease-in-out infinite;
@@ -199,5 +196,3 @@ body {
     transform: rotate3d(2, 1, -1, 360deg);
   }
 }
-
-
