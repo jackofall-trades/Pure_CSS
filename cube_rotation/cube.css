@@ -1,11 +1,23 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+}
+
+.cubes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
 /* Set background and border color */
@@ -15,7 +27,6 @@ body {
   border: 5px solid rgb(0, 0, 0);
   background: rgb(20, 58, 128);
   position: relative;
-  margin: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
