@@ -62,31 +62,32 @@ body {
     background-color: #0000007f;  /* 7f is for opacity */
     color: white;
 }
+
 .roll {
-  animation: dice-roll 3s ease-in-out infinite;
+  animation: dice-roll 5s ease-in-out infinite;
 }
 
 @keyframes dice-roll {
   0% {
-    transform: rotate3d(0, 0, 0, 0deg);
+    transform: rotate3d(0, 0, 0, 0deg); /*1*/
   }
   16.67% {
-    transform: rotate3d(0, 1, 0, 90deg);
+    transform: rotate3d(0, 1, 0, 90deg); /*3*/
   }
   33.33% {
-    transform: rotate3d(1, 0, 0, 90deg);
+    transform: rotate3d(1, 0, 0, -90deg); /*5*/
   }
   50% {
-    transform: rotate3d(0, 1, 0, 180deg);
+    transform: rotate3d(0, 1, 0, 180deg); /* 4*/
   }
   66.67% {
-    transform: rotate3d(1, 0, 0, 180deg);
+    transform: rotate3d(1, 0, 0, 90deg); /*6*/
   }
   83.33% {
-    transform: rotate3d(0, 1, 0, 270deg);
+    transform: rotate3d(0, 1, 0, 270deg); /*2*/
   }
   100% {
-    transform: rotate3d(0, 0, 0, 360deg);
+    transform: rotate3d(0, 0, 0, 360deg); /* 1*/
   }
 }
 
